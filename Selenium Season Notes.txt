@@ -1,0 +1,91 @@
+
+
+***************************************
+Selenium Season -1 
+***************************************
+
+-----------------------------------------
+Day - 22nd April  - Monday 
+
+https://www.selenium.dev/
+
+Selenium automates browsers. That's it!
+
+Primarily it is for automating web applications for testing purposes.
+
+Selenium supports below languages 
+
+Java , Python , JavaScript , Ruby , C# 
+
+
+How to download Selenium jar or libraries ?
+
+go to offical website https://www.selenium.dev/
+
+Click on "downloads"
+
+Scroll to below text in the Page
+
+"Previous Releases
+Here you can find a more complete list of Selenium releases."
+
+Click "releases" hyperlink 
+
+a new Window pops up , 
+
+here expand Selenium 3.141.59 version
+
+click on "selenium-server-standalone-3.141.59.jar"
+
+selenium jar will get downloaded 
+
+
+------------------------------
+Steps to add Selenium jar to Java Project 
+
+
+-> right click on "Project" --> Build path --> Click on "Configure Build path"
+
+--> click on "libraries" tab --> click on "classpath" --> click on "Add External jars" button 
+
+Now go to or browse to the loaction where you downloaded or saved the jar 
+
+-> click on jar or file -> click "open" --> click "Apply" --> click "Apply and Close" 
+
+Now you should see selenium under "Referenced Libaries" in project 
+
+
+=============================================
+Selenium Architecture 
+
+org.openqa.selenium
+org.openqa.selenium.chrome
+org.openqa.selenium.edge
+
+
+ChromeDriver()
+ChromeDriver(ChromeDriverService)
+ChromeDriver(ChromeDriverService, ChromeOptions)
+ChromeDriver(ChromeOptions)
+
+Exception in thread "main" java.lang.IllegalStateException:
+
+ The path to the driver executable must be set by the webdriver.chrome.driver system property;
+ for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver.
+ The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+ 
+ 
+chrome browser version : Version 123.0.6312.124 (Official Build) (64-bit)
+
+chromedriver.exe 
+
+https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.122/win64/chromedriver-win64.zip
+
+
+??????????????????????????????????/////
+Assignment 
+
+
+to launch Edge browser and Firefox Browser 
+
+???????????????????????????????????????????????????????
