@@ -89,3 +89,79 @@ Assignment
 to launch Edge browser and Firefox Browser 
 
 ???????????????????????????????????????????????????????
+
+
+
+
+Exception in thread "main" java.lang.IllegalStateException:
+ The path to the driver executable must be set by the webdriver.gecko.driver system property;
+ for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+
+
+Exception in thread "main" java.lang.IllegalStateException: 
+The path to the driver executable must be set by the webdriver.edge.driver system property;
+ for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+
+Boni garcia 
+
+
+WebDriverManager
+
+
+----------------------------
+WebDriver Sub interfaces 
+
+org.openqa.selenium.WebDriver.Navigation
+org.openqa.selenium.WebDriver.Options
+org.openqa.selenium.WebDriver.TargetLocator
+org.openqa.selenium.WebDriver.Timeouts
+org.openqa.selenium.WebDriver.Window
+
+----------------------------------
+WebDriver methods (13) 
+
+
+
+findElement(By)
+findElements(By)
+
+getCurrentUrl()
+getPageSource()
+
+getWindowHandle()
+getWindowHandles()
+manage()
+navigate()
+
+switchTo()
+
+------------------------
+get(String):void 
+
+here String is the URL of app like "https://adactinhotelapp.com/"
+
+this is to launch the app 
+
+---------------
+close():void 
+
+this will close a window or tab on which the Webdriver focus 
+
+WARNING: onError
+java.net.SocketException: Connection reset
+
+this will not kill the driver executable e.g chromedriver.exe 
+
+---------------
+quit():void 
+
+this will close all windows or tabs opened during session 
+
+this will kill  the driver executable e.g chromedriver.exe 
+
+
+--------------------------
+getTitle():String 
+
+
+
