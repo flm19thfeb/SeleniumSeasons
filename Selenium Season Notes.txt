@@ -122,18 +122,7 @@ WebDriver methods (13)
 
 
 
-findElement(By)
-findElements(By)
 
-getCurrentUrl()
-getPageSource()
-
-getWindowHandle()
-getWindowHandles()
-manage()
-navigate()
-
-switchTo()
 
 ------------------------
 get(String):void 
@@ -165,3 +154,141 @@ getTitle():String
 
 
 
+--------------------------------
+getCurrentUrl():String 
+
+this will return the address present in address bar in form of String 
+
+-----------------------------------
+
+getPageSource():String 
+
+this will return the html page source code in form of String 
+
+
+-------------------------------------------------------
+
+getWindowHandle():String 
+this will return the window id of the tab/window on which WebDriver focus is 
+
+EC1D2FC568304DC372559D2C063CDA9C
+
+--------------------------------------------------------
+getWindowHandles():Set<String>
+
+this will return the window id's of the all the tab's/window's opened during that session 
+
+----------------------------------------------------------------
+manage():Options 
+
+this is used to manage cookies , window , synchronization etc ..
+
+addCookie(Cookie)
+deleteAllCookies()
+deleteCookie(Cookie)
+deleteCookieNamed(String)
+getCookieNamed(String)
+getCookies()
+logs()
+timeouts()
+window():Window 
+
+fullscreen()
+getPosition()
+getSize()
+maximize():void ==> used to maximize the window 
+minimize()
+setPosition(Point)
+setSize(Dimension)
+
+how to maximize a window ?
+
+driver.manage().window().maximize();
+
+---------------------------------------------
+navigate():Navigation
+
+this is used to navigate back or forward or to any url 
+
+back():void 
+forward()
+refresh()
+to(String) : void ==> this is same as get(String) method 
+to(URL)
+
+------------------------------
+switchTo():TargetLocator
+
+this is used to switch the driver control/ focus to alert, windows/tab , frames ..
+
+activeElement()
+alert()
+defaultContent()
+frame(int)
+frame(String)
+frame(WebElement)
+newWindow(WindowType)
+parentFrame()
+window(String)
+
+----------------------------------------------
+
+
+findElement(By):WebElement 
+
+
+By class static methods are called locators 
+Locators in Selenium : 
+
+
+className(String):By
+cssSelector(String):By
+id(String):By
+linkText(String):By
+name(String):By
+partialLinkText(String):By
+tagName(String):By
+xpath(String):By
+
+
+HTML Terminology :
+
+<input type="text" name="username" id="username" class="login_input" value="" fdprocessedid="xhovjk">
+
+<a href="Register.php">New User Register Here</a>
+
+<tagname attribute1="value of attribute1" attribute2="value of attribute2" ..attributeN="value of attributeN">
+
+<tagname attribute1="value of attribute1" attribute2="value of attribute2" ..attributeN="value of attributeN">text on element</tagName>
+
+
+Locators based on attributes : 
+
+id(String)
+name(String)
+className(String)
+
+Locators based on link text : 
+
+used only for links (hint : for link tagname is "a")
+
+linkText(String):By
+partialLinkText(String):By
+
+
+Locators based on tagName:
+
+tagName(String):By ==> this is used to find multiple elements 
+
+
+
+Locators based on tagName,attributes,text etc .. 
+
+cssSelector(String):By
+xpath(String):By
+
+<img src="images/home.gif" width="118" height="23" border="0">
+
+
+------------------------------
+findElements(By)
