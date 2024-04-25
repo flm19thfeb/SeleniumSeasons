@@ -120,6 +120,19 @@ org.openqa.selenium.WebDriver.Window
 ----------------------------------
 WebDriver methods (13) 
 
+close():void
+findElement(By):WebElement
+findElements(By):List<WebElement>
+get(String):void 
+getCurrentUrl():String
+getPageSource():String
+getTitle():String
+getWindowHandle():String
+getWindowHandles():Set<String>
+manage():Options
+navigate():Navigation
+quit():void 
+switchTo():TargetLocator
 
 
 
@@ -292,3 +305,86 @@ xpath(String):By
 
 ------------------------------
 findElements(By)
+
+13+8+16
+
+--------------------------------------------------------------
+
+WebElement (I) : 
+
+16 methods 
+
+
+findElement(By)
+findElements(By)
+
+
+
+getTagName()
+isDisplayed()
+isEnabled()
+isSelected()
+submit()
+
+---------
+getAccessibleName()
+getAriaRole()
+getDomAttribute(String)
+getDomProperty(String)
+getShadowRoot()
+---------------------------------------------
+
+***************************
+Methods in WebElement
+***************************
+
+sendKeys(CharSequence...):void 
+
+this will type the CharSequence or String on the Webelement
+
+
+click():void 
+
+
+this will click on WebElement (button , img , checkbox, radio button ..)
+
+
+-----------------------------------------------------
+clear():void 
+
+to clear the existing text on WebElement ( textbox , text area )
+
+---------------------------------------------------------
+
+getText():String 
+
+
+this will return the text present on WebElement in form of String 
+
+------------------------------------------------------
+getAttribute(String):String
+
+this will return the value of attribute 
+
+case 1: attribute having value 
+o/p : value of attribute 
+
+case 2: no attribute 
+o/p : null 
+
+case 3: attribute present but value not assigned 
+o/p : empty string or sometime true 
+
+------------------------------------------------------
+getCssValue(String):String
+
+this will return the css values (color , font weight , etc ..) of the WebElement
+
+-----------------------------------------------------------------
+
+getLocation():Point ( to get x and y coordinates of Left most corner WebElement)
+getSize():Dimension ( to get heigth and width of WebElement)
+getRect():Rectangle ( both)
+
+
+--------------------------------------------------------------------
