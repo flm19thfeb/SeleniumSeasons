@@ -315,16 +315,7 @@ WebElement (I) :
 16 methods 
 
 
-findElement(By)
-findElements(By)
 
-
-
-getTagName()
-isDisplayed()
-isEnabled()
-isSelected()
-submit()
 
 ---------
 getAccessibleName()
@@ -388,3 +379,77 @@ getRect():Rectangle ( both)
 
 
 --------------------------------------------------------------------
+
+isDisplayed():boolean 
+isEnabled():boolean 
+isSelected():boolean  --> Dropdown , Checkbox , Radiobutton 
+
+-----------------------------------------------------------------------
+
+getTagName():String 
+
+this will return the tagname of the WebElement
+
+---------------------------------------------------------------
+
+submit():void 
+
+this is used to submit a form to backend server 
+
+------------------------------------------------------------
+
+findElement(By):WebElement
+
+findElements(By):List<WebElement>
+
+
+----------------------------------------------------------------------
+
+
+13 +  8 + 16 
+
+Links :
+
+tagName : "a" 
+
+
+
+<a href="ForgotPassword.php">Forgot Password?</a>
+
+<a href="Register.php">New User Register Here</a>
+
+<a href="mailto:info@adactin.com">info@adactin.com</a>
+
+
+---------------------------------------------------------
+Dropdown 
+
+To select iteam from dropdown , we have 2 ways
+
+i) Conventional way (using SendKeys method)
+
+ii)using Select class
+
+new Select(WebElement);
+
+selectByIndex(int)
+selectByValue(String)
+selectByVisibleText(String)
+
+???????????????????????????/
+Assignment
+
+in https://www.facebook.com/
+
+click on "Create new account" 
+
+in Sign up form
+
+choose your Date of birth using 
+
+Select class 
+
+solution send it to below email add 
+	flmtechteam.testing@gmail.com
+
+???????????????????????????????????
