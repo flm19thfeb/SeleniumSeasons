@@ -1,0 +1,1234 @@
+*****************************************
+********** JAVA SEASON -1 ***************
+*****************************************
+--------------------------------------------------------
+-----------------------------------------------------
+Day 0 : 26th Mar - Tuesday
+-----------------------------------------------------  
+
+Features of Java : 
+
+1. Simple : 
+
+  - c++ ,syntax is very similar 
+  - Memory mangement is easy ( Garbage Collector )
+  - removed the most confuging concepts like operator overloading , explicit pointer 
+  
++ - * / % 
+
+2 + 5 = 7
+
++ power  2 + 5 = 32 
+
+2. OO object oriented 
+
+this is methodology which will ease the development and maintannce of apps 
+
+using basic concepts 
+
+object
+class
+Encapsulation
+Polymorphism
+Inheritance
+Abstraction 
+
+
+3. Robust 
+
+	- Garbage Collector , do memory management , this will not crash the app because of memory overflow
+	- type checking mechanism 
+	- exception handling mechanism
+	
+	
+	int x=10;
+	String  s1="flm";
+	int y=x+s1;
+	
+4. Secure 
+
+	- no pointers concept 
+	
+	
+
+-----------------------------------------------------
+Day 1 : 27th Mar - Wednesday
+----------------------------------------------------- 
+
+5. Platform Independent 
+
+Platform means OS
+
+6. Architectural Neutral 
+
+Architecture means Processor + RAM 
+
+Dev 			User 1		user 2   user 3
+
+I5	 			I3			I7		 AMD 
+
+App  
+
+7.Portable 
+
+means Architecture 
+
+one classification according to core design 
+
+
+IBM , Apple , Solaris 
+
+
+Dev 			User 1		user 2   user 3
+
+IBM 			IBM 		Apple	 Solaris 	
+Lenovo			Hp
+
+App 
+
+C languaage is not portable 
+
+
+---------------------------------
+WORA - Write Once Run Anywhere
+---------------------------------
+
+JAVA (JSE / jdk )
+
+how to install jdk ?
+
+https://www.oracle.com/in/java/technologies/downloads/
+
+as on 27th Mar 
+
+Java 22, Java 21, and Java 17 available now 
+
+Q: what versionof jdk ?
+
+Ans : jdk 11 
+
+download the below zip file 
+
+jdk-11.0.22_windows-x64_bin.exe
+
+how to check jdk installed or not ?
+
+go to below location and check folders are available
+
+C:\Program Files\Java\jdk-11
+
+?????????????????????
+how to configure jdk ?
+?????????????????????
+
+configuration means telling Operating System where the jdk software is available 
+
+
+Go to environment variables 
+
+1) and in "user environment variables fo account"
+
+create below new variable
+
+Variable Name : JAVA_HOME
+
+Variable value : C:\Program Files\Java\jdk-11
+
+2) and In System Variables
+
+Select on "path" and cLick Edit 
+
+if you find below value in path
+C:\Program Files\Common Files\Oracle\Java\javapath , select and delete
+
+Now click on "New" button 
+
+and paste below link or value 
+
+C:\Program Files\Java\jdk-11\bin
+
+Next click ok > ok > ok 
+
+
+?????????????????????
+how to check jdk configuration is complete
+?????????????????????
+
+
+go to command prompt 
+
+and give the below command 
+java -version 
+
+C:\Users\Riyaz>java -version
+java version "11.0.22" 2024-01-16 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.22+9-LTS-219)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.22+9-LTS-219, mixed mode)
+
+
+-----------------------------------------------------
+Day 2 : 28th Mar - Thursday
+----------------------------------------------------- 
+
+jdk folders :
+
+C:\Program Files\Java\jdk-11
+
+
+								jdk 
+								
+								
+								
+			lib					bin /tools			jre 
+
+
+lib : Library 
+
+predefined stuff which helps in deisgning the java programs or apps
+
+contains executable jars 
+
+						jar ( ~ zip folder)
+						 |
+						packages ( ~ folders)
+						  |
+				---------------------
+			    |					  |
+				
+			Classes                 Interfaces
+				|					    |
+		----------------		     -----------------
+		|				|           |                 |
+     variables       Methods	  Fields/			Abstract methods 
+		                          constants
+								  
+bin / tools : 
+
+
+javac
+
+java
+
+javap
+
+javadoc 
+
+jar
+
+javah  								 
+
+below tools or commands or applications will be used mostly :
+
+javac
+
+to compile , open command propt at the location of file and give below command 
+
+syntax : 
+
+javac FileName.java 
+
+
+java:
+
+to run a complied java file 
+
+syntax : 
+
+java FileName 
+
+
+jre : (Java Runtime Environment) 
+
+
+jvm (Java Virtual Machine )
+
+											jvm
+									
+									
+					CLSS					EE             		GC 
+
+								Interpreter    JIT
+											   compiler 
+											   
+											   
+3 components :
+
+
+CLSS (Class Loader Sub System)
+
+- Loading 
+
+- Linking 
+ means linking or linking called and caller 
+
+- initialization 
+
+EE : (Execution Engine )
+
+Interpreter : 
+
+Converts BC to MC line by line or statement by statement 
+
+JIT compiler : ( comes into picture when we have repetitive code like for loop ,while loop etc ..)
+
+for High Performance 
+
+Garbage Collector : 
+
+Mark : identifies variables or object which can be deallocated
+
+Sweep : deallocates the variables or object
+											    
+
+=========================================
+JAVA MEMORY BLOCKS 
+=========================================
+
+1. Class Area / Method Area
+	.class file  (program)
+	static variables
+	static methods
+	static blocks
+
+2. Heap Area  (dynamic memory allocation Area)
+	Objects
+	Arrays 
+
+3. Java Stack Area 
+	Local declarations or Local Variables
+	Expressions
+	current running logic/code  (methods , loops etc ..)
+
+4. String Constant Pool Area 
+    only Strings  
+	String s="FLM";
+											   
+						
+
+int x=10;
+
+int y=20;
+
+System.out.println(x+y);						
+											   
+											   
+
+-----------------------------------------------------
+Day 3 : 29th Mar - Friday
+----------------------------------------------------- 
+
+================================
+Structure of Java Program
+================================	
+
+4 sections 
+
+1) Documentation Section
+2) Package Section
+3) Import Section
+4) Class/Interface Section
+
+
+1) Documentation Section 
+means comments which tells what is going on 
+
+2 types of comments 
+
+single line comments
+
+starts // jlkjlkjlkjlk
+
+multiline comments 
+
+/*  lkjkljk
+lkjhkjhkj
+luoiyuytrtrc
+*/
+
+
+2)Package Section
+package means folder 
+
+
+package packagename;
+
+for logical grouping of classes or interfaces 
+
+only one package section per java class or interface 
+
+
+
+3)Import Section 
+
+
+Hello.java:21: error: cannot find symbol
+Scanner input=new Scanner(System.in);
+^
+  symbol:   class Scanner
+  location: class Hello
+Hello.java:21: error: cannot find symbol
+Scanner input=new Scanner(System.in);
+                  ^
+  symbol:   class Scanner
+  location: class Hello
+2 errors
+									   
+									   
+Scanner is a class given by Java community and it is present in java.util 
+
+import java.util.*;	  							   
+
+import java.util.Scanner;  // this is prefered because of readability
+ 
+
+-----------------------------------------------------
+Day 4 : 1st Apr - Monday
+----------------------------------------------------- 
+
+4. Class / Interface
+
+access-specifier access-modifier class ClassName
+{
+
+variables ;
+
+methods ;
+
+}
+
+===========================================
+Java Naming Conventions
+===========================================
+
+					packages ( ~ folders)
+						  |
+				---------------------
+			    |					  |
+				
+			Classes                 Interfaces
+				|					    |
+		----------------		     -----------------
+		|				|           |                 |
+     variables       Methods	  Fields/			Abstract methods 
+		                          constants
+								  
+								  
+								  
+packages : all lower case 		
+
+java.util
+
+regression 
+
+java.io
+
+org.openqa.selenium
+
+						  
+Classes  / Interfaces :  Title case 
+
+e.g RamaKrishna  						  
+				
+Scanner 
+
+ChromeDriver
+
+ValidateLogin
+
+FileInputStream
+
+				
+variables : Camel Case (Lower Case + Title Case)
+
+x
+
+netSalary	
+
+costOfItem
+
+methods /Abstract methods  : Camel Case (Lower Case + Title Case)
+
+main(
+
+println(
+
+nextInt(							  
+								  
+Fields/Constant : All upper case 
+
+PI=3.14;
+
+MAX_LIMIT=10000;								  
+								  
+===============================
+Variables in JAVA =============
+===============================
+
+Based on location and behaviour variables are classified into 3 types .
+
+why variables?
+
+x=10
+
+-> reference name to a memory  block 
+
+-> to store or hold a value for reuse 
+
+-> simplifies the expressions 
+
+-> stores once and recall anywhere in programs 
+
+
+									
+								Variables 
+
+
+			Local				Instance			Static 
+			
+syntax of variable:
+
+access-specifier access-modifier datatype variableName; this is variable declaration
+
+access-specifier access-modifier datatype variableName=value; initialization 
+
+1. Definition:
+2. when memory is allocated :
+3. where memory is allocated :
+4. Life time or scope of variable :
+5. calling
+			
+--------------------			
+Local Variables :
+--------------------
+
+1. Definition :
+variables which are declared inside a method are called local variables
+
+2. when memory is allocated :
+when the method is called 
+
+3. where memory is allocated :(which Area)
+Java Stack Area 
+
+
+4. Life time or scope of variable :
+till the end of method 
+
+
+5. calling style
+
+variable name itself 
+
+
+Note : It's the responsibity of programmer/ developer to initialize the local variables 
+
+VariablesDemo1.java:11: error: variable y might not have been initialized
+System.out.println(y);
+                   ^
+1 error
+			
+--------------------			
+Instance Variables :
+--------------------							
+									
+1. Definition:
+
+variables which are declared inside a class but outside of method 
+
+2. when memory is allocated :
+only when object or instance is created for that class 
+how to create an object or instance ?
+
+ClassName objectName=new ClassName();
+
+3. where memory is allocated :
+in Heap Area 
+
+
+
+4. Life time or scope of variable :
+till the last usage of object 
+
+
+5. calling	style :	
+
+objectName.variableName;							
+								  
+--------------------			
+Static Variables :
+--------------------								  
+								  
+1. Definition: 
+
+variables which are declared inside a class but outside of method having keyword static 
+
+when to go for static ?
+
+when you have something that is "common" and can be "shared across" 
+
+
+2. when memory is allocated :
+during .class file loading 
+
+3. where memory is allocated :
+Class area / Method Area 
+
+4. Life time or scope of variable :
+till the end of program 
+
+
+5. calling style 
+
+ClassName.variableName
+	
+
+
+-----------------------------------------------------
+Day 5 : 4th Apr - Thursday
+----------------------------------------------------- 
+	
+											  
+DataTypes in Java : 
+
+									DataTypes
+								
+								
+				1) Primitive (8)				2)Non-primitive 
+
+				
+1) boolean  
+2) char  'a' 'b' 
+3) byte  1B     
+4) short
+5) int
+6) long
+7) float
+8) double 								
+								
+			n-1 	  n-1		
+range    -2		to + 2   -1
+			7 
+	     -2
+		
+How to download Eclipse :
+
+
+Eclipse is an IDE (Integrated Development Environment) 							
+								
+								
+go to below link
+https://www.eclipse.org/downloads/
+
+
+click on "Download Packages" link
+
+Now the latest version is Eclipse IDE 2024-03 R Packages	
+
+Don't download latest one .. go for previous releases which will be 
+under "MORE DOWNLOADS"
+
+Click on "Eclipse 2023-06 (4.28)"
+
+Here Click on "Windows x86_64"
+
+under "Eclipse IDE for Enterprise Java and Web Developers"		
+
+a zip file with below name will get downloaded
+
+eclipse-jee-2023-06-R-win32-x86_64.zip
+
+Now extract the zip file 
+
+once zip file is extracted ,
+
+inside unzipped folder , you will find eclipse application
+
+
+-----------------------------------------------------
+Day 6 : 5th Apr - Friday 
+----------------------------------------------------- 
+
+			
+Methods in Java : 
+
+
+- Set of statements or instructions 
+
+Ads of methods :
+
+- reusability
+- code clarity
+- avoids code redundancy
+- length of code reduces
+- easy debugging of program 
+
+
+syntax : 
+
+
+access-specifier modifier return-type methodName(arguments or paramters)
+{
+ local declarations;
+ 
+ statements;
+ 
+ local declarations;
+ 
+ statements;
+ :
+ 
+ return statement ;
+
+}	
+			
+			
+					Types of Methods 
+					
+		Instance/non-static 			Static 	
+
+1. Definition:
+2. when memory is allocated :
+3. where memory is allocated :
+4. Life time or scope of variable :
+5. calling		
+			
+			
+Instance/non-static   methods :
+
+1. Definition: method declared without static keyword 
+
+<default> , abstract , transient , volatile etc 
+
+2. when memory is allocated :
+
+when you create an object 
+
+3. where memory is allocated :
+
+in Heap Area 
+
+4. Life time or scope of variable :
+
+till the last usage of method 
+
+5. calling	style :
+
+objectName.methodName 
+
+????????????????????????????????????
+Assignment: 
+Write a Java Program in that 
+Create method to calculate Simple Interest 
+??????????????????????????????????????????????????
+
+
+-----------------------------------------------------
+Day 7 : 8th Apr - Monday 
+----------------------------------------------------- 
+				
+1. Definition:
+2. when memory is allocated :
+3. where memory is allocated :
+4. Life time or scope of variable :
+5. calling				
+			
+1. Definition: 			
+
+method declared using keyword static 
+
+
+2. 	when memory is allocated :
+
+during .class file loading 
+
+
+3. where memory is allocated :
+
+Class Area / Method Area 
+
+4. Life time or scope of variable :
+
+till end of program 
+
+5. 	calling style :
+
+ClassName.methodName
+
+=======================================
+OOP - Object Oriented Programming
+=======================================
+
+
+before OOP we use to have POP Procedure Oriented Programming (COBOL , C etc ...)
+
+Object
+Class 
+- Encapsulation
+- Polymorphism
+- Inheritance
+- Abstraction
+
+Object : 
+
+Anything that exists is an Object 
+
+e.g 
+
+Marker
+Fan
+Man
+Dog
+Bank Account Number 
+
+Object has 3 Characteristics 
+
+
+State : attributes or paramters that describes an Object , these or nothing but variables
+
+for e.g1 :  Marker is an Object 
+
+attributes: length 12cm , Shape = cylindrical , Color = white 
+
+for e.g2 :  Dog is an Object 
+
+attributes: color , breed, gender 
+
+
+for e.g3 : Bank Account Number 
+
+attributes : number of digits = 13  , alphanumeric or not = true 
+
+
+Behaviour : the actions or tasks that object can perform , nothing but methods 
+
+for e.g1 :  Marker is an Object 
+
+tasks : writing
+
+for e.g2 :  Dog is an Object  
+
+tasks : eating , barking , sleeping etc 
+
+Identity :  used by JVM to identify the Object using unique ID 
+
+
+Class : 
+
+It's a template or blue print from where we can create an object 
+
+
+Here Class is logical entity 
+
+
+
+-----------------------------------------------------
+Day 8 : 10th Apr - Wednesday 
+----------------------------------------------------- 
+	
+	
+Object Creation Techniques :
+
+
+1. using new operator 
+
+ClassName objectName=new ClassName();
+
+
+2. using Static Factory Method 
+
+ClassName objectName=ClassName.methodName();
+
+for e.g :
+
+By class in Selenium(org.openqa.selenium)
+
+By.id(String):By 
+
+By obj=By.id("username");
+
+
+3. using non-static Factory method
+
+ClassName1 object1=new ClassName1():
+
+ClassName2 object2=object1.methodName();
+
+
+XSSFWorkbook object1=new XSSFWorkbook();
+
+XSSFSheet  object2=object1.getSheet("Sheet1");
+
+
+4 .using clone method 
+
+5. using Literals 
+
+
+ClassName objectName= value;
+
+String s1="FLM";
+
+Integer x=10;
+
+6. using deserialization  
+
+no syntax (JVM uses this)
+
+we will discuss this in Season 2 in Exception Handling topic 
+
+
+=============================
+Encapsulation 
+=============================
+
+Encapsulation in Java is a process of wrapping code and data together into a single unit,
+ for example, a capsule which is mixed of several medicines.
+
+
+	Encapsulation = Data Hiding + Abstraction		
+	
+	
+The field Bank.balance is not visible
+
+
+-----------------------------------------------------
+Day 9 : 12th Apr - Friday 
+----------------------------------------------------- 
+
+Clock 
+
+hr,min,sec
+
+8 50 45
+
+8:50:45
+
+void java.io.PrintStream.println(String x)
+
+
+PrintStream
+
+4 methods 
+
+
+print this will print on console and cursors stays in same line 
+
+* * * * *
+* * * *
+* * *
+* * 
+*
+
+println this will print on console and moves the cursor to next line
+
+
+printf this will print the output in desired format 
+
+
+format
+
+
+
+this : 
+
+this is a keyword cum operator 
+
+used to refer current calling object reference 
+
+what is the need of "this" keyword ?
+
+when we have local variable names same as Instance variable names
+local variables dominates so avoid this situation we use "this" keyword
+
+-----------------------------------------------------
+Day 10 : 15th Apr - Monday 
+----------------------------------------------------- 
+
+The method add(int, int) in the type Sum is not applicable for the arguments (double, double)
+
+The method add(int, int) in the type Sum is not applicable for the arguments (long, long)
+public void add(int x,int y)
+	{
+		System.out.println("Sum is "+(x+y));
+	}
+	
+	public void addDouble(double x,double y)
+	{
+		System.out.println("Sum is "+(x+y));
+	}
+	
+	public void addLong(long x,long y)
+	{
+		System.out.println("Sum is "+(x+y));
+	}
+	
+	
+
+
+	public void add(int x,int y)
+	{
+		System.out.println("Sum is "+(x+y));
+	}
+	
+	public void add(double x,double y)
+	{
+		System.out.println("Sum is "+(x+y));
+	}
+	
+	public void add(long x,long y)
+	{
+		System.out.println("Sum is "+(x+y));
+	}
+
+
+Polymorphism : 
+
+Poly means many
+morphism means forms 
+
+
+							Polymorphism
+							
+			Static								Dynamic
+				or								  or
+			Compile time						Runtime
+				or									or
+			Early Binding						Late Binding
+		
+Note : here binding means linking (caller method and called method)		
+			
+			
+Static Polymorphism can be achived by means of method overloading 
+
+
+
+
+
+Terminology :
+
+method signature means MethodName + Arguments 		
+			
+method overloading 	: same method name with different method signature in the same class 
+
+  can be done by means :  with different datatypes (arguments)
+						  with change in no of arguments
+						  with change in order of arguments
+							
+							
+?????????????????????????????????????????????????????????
+Assignment 
+
+Create a class Aadhar 
+
+and overload method setAadhar print the Aadhar number in below format
+
+3124 5214 6984
+
+Hint : 
+
+
+double java.lang.Math.random()
+
+
+Returns a double value with a positive sign, greaterthan or equal to 0.0 and less than 1.0.
+Returned values are chosen pseudorandomly with (approximately)uniform distribution from that range. 
+
+System.out.println( (int)(Math.random()*10000));
+
+send your program/screenshots to below email id
+
+flmtechteam.testing@gmail.com
+
+??????????????????????????????????????????????????????????
+
+Constructor :
+
+
+
+-----------------------------------------------------
+Day 11 : 16th Apr - Tuesday 
+----------------------------------------------------- 
+
+Constructor :
+
+is a method having same name as classname
+
+
+rules for contructor :
+
+1. constructor doesn't have return type
+
+Q: what happens if we mention return-type to constructor ?
+
+Ans : No error , it will be consider as a normal method 
+
+2. constructor doesn't have access-modifier 
+
+Q : what happens if we mention access-modifier  to constructor ?
+
+Ans : Compile time error 
+
+Illegal modifier for the constructor in type Clock; only public, protected & private are permitted
+
+
+3. We can't call Constructor explicitly 
+
+						
+							Constructor
+						
+			default 						paramaterized 
+				or
+			non-parameterized
+						
+default constructor means a constructor without any arguments
+			
+						
+						
+Note : 
+
+if there is no default contructor and other constructor's are present
+then you should choose any one from the available constructor's 
+
+
+**************************
+Inheritance
+**************************
+
+
+-----------------------------------------------------
+Day 12 : 17th Apr - Thursday 
+----------------------------------------------------- 
+
+	Marks extends Student
+
+Here Marks Child / derived /sub class 
+
+and Student Parent / Super class 	
+						
+Method Overiding : 
+
+Implementing the method of parent class in child class 						
+							
+							
+
+
+-----------------------------------------------------
+Day 13 : 19th Apr - Friday 
+----------------------------------------------------- 
+
+							
+						Abstraction
+
+
+
+			Abstract Class					Interfaces 
+			
+			0 to 100 % abstraction				100% abstraction
+			
+			
+			
+This method requires a body instead of a semicolon
+
+Note : 
+Cannot instantiate the type Numbers
+means we can't create an object for Abstract Class 
+
+
+The type Sum must implement the inherited abstract method Numbers.compute(int, int)
+
+Abstract class :
+
+access-specifier abstract class ClassName
+{
+
+//abstract methods means methods without body 
+//concrete methods means methods with body 
+}
+
+
+Interface:
+
+access-specifier access-modifier interface InterfaceName
+{
+
+//constants
+
+Illegal modifier for the interface field MyInter.PI; only public, static & final are permitted
+
+//abstract methods 
+
+Abstract methods do not specify a body
+
+}					
+							
+						
+*******************************************
+Season 2 
+
+
+				Flow Control  or Control Flow statements
+				
+	
+	Selection statements					Iterative or Loop       Transfer or Jump 
+	or 
+	Decission making statements
+	
+	i) if -else 						i) while()					i) break
+	ii) switch							ii) do while()				ii) continue
+										iii) for loop				iii) return
+										iv) for each loop 			iv) try-catch-finally
+																	v) Assert
+							
+if else statements :        
+
+
+<20000   10% 						20%
+
+>=20000 || <30000 20%				30%
+
+>=30000     30%						40%					
+
+
+if(condition1)
+{
+statements
+
+}
+else if(condition2)
+{
+
+statements
+}
+else 
+{
+}
+
+
+In Scanner Class :
+
+
+
+nextByte():byte 
+nextByte(int):byte
+nextDouble()
+nextFloat()
+nextInt():int 
+nextInt(int)
+nextLine()
+nextLong()
+nextLong(int)
+nextShort()
+nextShort(int)
+
+next():String
+
+
+ if(x>=0)
+		  { 
+			  System.out.println("x is +ve number");
+		  } 
+		  else 
+		  {
+		  System.out.println("x is -ve number"); 
+		  }
+		 
