@@ -482,7 +482,7 @@ stale element reference: stale element not found
   in https://www.flipkart.com/ app 
   
   
-  check all links under "About Salesforce" module 
+  check all links under "CONSUMER POLICY" module 
   
   hint : 
   
