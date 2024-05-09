@@ -489,3 +489,47 @@ stale element reference: stale element not found
   xpath : //div[text()='CONSUMER POLICY']/parent::div
   
   ????????????????????????????????????????????????????????????
+  
+  
+  Exception in thread "main" org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/pages/paymentsecurity?otracker=${otracker}_navlinks" class="HlWMPX" aria-label="...">Security</a> is not clickable at point (797, 668). Other element would receive the click: <div class="fbDBuK _3CYmv5" tabindex="-1">...</div>
+  (Session info: chrome=124.0.6367.119)
+  
+  Reason : Element is present but some other element is coming on it in Front End 
+  
+  Solution : First handle that Element which coming as Pop up 
+  
+  Solution 2 : using JavaScriptExecutor (this will be discussed later)
+  
+  -----------------------------------
+  Select (C) : 
+  
+  Select(WebElement)
+  
+  
+  getOptions() :List<WebElement> 
+  
+==============================================================
+
+Frameworks 
+
+							Frameworks
+							
+							
+			InBuilt 						User-Defined 				
+							
+							
+InBuilt/Unit Testing  - based on Programming Language 
+
+
+Java - Junit  , TestNG 
+
+.net -  NUnit 
+
+Python  - 	pytest 
+
+
+TestNG : TestNext Generation 
+
+						
+							
+							
