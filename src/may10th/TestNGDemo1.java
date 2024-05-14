@@ -11,7 +11,7 @@ public class TestNGDemo1 {
 		System.out.println("Browser started ...");
 		System.out.println("App Launched ...");
 		System.out.println("Login Successfull ...");
-		Assert.assertTrue(true);
+		Assert.assertTrue(false);
 		System.out.println("Browser closed ...");
 	}
 	

@@ -567,4 +567,91 @@ flmtechteam.testing@gmail.com
 ??????????????????????????????????????????????????
 						
 							
-							
+Xpath writing Techniques 
+
+Xpath stands for XML path 
+
+HTML  
+
+XML
+
+xpath is a query lang to find XML/HTML nodes
+
+								xpath
+								
+				absolute					relative
+
+
+/html/body/table[2]/tbody/tr/td[2]/form/table/tbody/tr[2]/td[2]/input
+
+/html/body/table[2]/tbody/tr/td[2]/form/table/tbody/tr[2]/td[2]/input
+
+				
+								
+relative xpath writing techniques : 
+
+
+1) xpath using tagname and attribute
+								
+
+//tagname[@attribute='value of attribute']
+
+<input type="text" name="username" id="username" class="login_input" value="">
+
+//input[@id='username']
+
+//input[@id='username']
+
+
+//input[@class='login_input' and @type='password']
+
+
+2) xpath using tagname and text on element 
+
+<tagname attribute1="value of attribute1" attribute2="value of attribute2" ..attributeN="value of attributeN">text on element</tagName>
+
+//tagname[text()='text on element']
+
+//td[text()='Important Note:']
+
+
+3) xpath using contains function
+
+//tagname[contains(@attribute,'subset of value of attribute')]
+
+<img src="img/ios-button.png">
+
+//img[@src='img/ios-button.png']
+or
+//img[contains(@src,'ios-button')]
+
+
+//tagname[contains(text(),'subset of text on element')]
+
+
+4) xpath using starts-with function 
+
+//a[@id='u_0_0_cU']
+
+//a[@id='u_0_0_++']
+
+//tagname[starts-with(@attribute,'starting or the prefix of value of attribute')]
+
+//a[starts-with(@id,'u_0')]	
+
+
+
+Miscellenous Actions : 
+
+org.openqa.selenium.interactions
+
+
+Actions
+
+Actions(WebDriver)
+
+
+Mouse Hover 
+
+moveToElement(WebElement)
+moveToElement(WebElement, int, int)
