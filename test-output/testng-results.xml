@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-14T21:36:56 IST" name="Default suite" finished-at="2024-05-14T21:37:14 IST" duration-ms="17909">
+  <suite started-at="2024-05-15T21:00:57 IST" name="Default suite" finished-at="2024-05-15T21:01:07 IST" duration-ms="9785">
     <groups>
     </groups>
-    <test started-at="2024-05-14T21:36:56 IST" name="Default test" finished-at="2024-05-14T21:37:14 IST" duration-ms="17909">
-      <class name="may14th.MouseHover">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:may14th.MouseHover@5f049ea1]" started-at="2024-05-14T21:36:56 IST" name="setUp" finished-at="2024-05-14T21:37:04 IST" duration-ms="7719" status="PASS">
+    <test started-at="2024-05-15T21:00:57 IST" name="Default test" finished-at="2024-05-15T21:01:07 IST" duration-ms="9785">
+      <class name="may15th.DragAndDrop">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:may15th.DragAndDrop@57a78e3]" started-at="2024-05-15T21:00:58 IST" name="setUp" finished-at="2024-05-15T21:01:03 IST" duration-ms="5902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="mouseHoverTest()[pri:0, instance:may14th.MouseHover@5f049ea1]" started-at="2024-05-14T21:37:04 IST" name="mouseHoverTest" finished-at="2024-05-14T21:37:13 IST" duration-ms="9579" status="PASS">
+        <test-method signature="dragAndDropTest()[pri:0, instance:may15th.DragAndDrop@57a78e3]" started-at="2024-05-15T21:01:03 IST" name="dragAndDropTest" finished-at="2024-05-15T21:01:04 IST" duration-ms="486" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mouseHoverTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:may14th.MouseHover@5f049ea1]" started-at="2024-05-14T21:37:13 IST" name="teardown" finished-at="2024-05-14T21:37:14 IST" duration-ms="521" status="PASS">
+        </test-method> <!-- dragAndDropTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:may15th.DragAndDrop@57a78e3]" started-at="2024-05-15T21:01:04 IST" name="teardown" finished-at="2024-05-15T21:01:07 IST" duration-ms="3320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- may14th.MouseHover -->
+      </class> <!-- may15th.DragAndDrop -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
