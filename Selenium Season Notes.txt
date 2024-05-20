@@ -776,5 +776,95 @@ Then a new tab will get opened
 
 switch to that tab and print the texts in "Top Tutorials" module
 
+hint : 
+xpath for Top tutorials text 
+
+//p[text()='Top Tutorials']/ancestor::div[contains(@class,'wp-block-kadence-column')][1]/descendant::span[@class='kt-blocks-info-box-title']
+
 ???????????????????????????????????????????????????????????????????????
 
+kt-blocks-info-box-title
+
+
+
+-----------------------------------------------
+Alerts Handling :
+
+3 types of alerts
+
+1. simple 
+2. comfirmantion alert 
+3. Prompt alert 
+
+switchTo():TargetLocator
+	- alert():Alert
+
+Methods present in Alert(I):
+accept():void --> clicks Ok on alert
+dismiss():void --> clicks on "Cancel" button 
+getText():String --> returns the text on Alert in String format
+sendKeys(String): void --> to send text on the textbox present in a prompt alert 
+
+
+to validate the text on alert is : Please enter a valid user name
+
+??????????????????????????????????????????????????????
+Assignment
+
+login to below app 
+
+https://demo.guru99.com/v4/
+
+using below credentials
+
+
+User ID :	mngr266311
+Password :	12345678@
+
+--> cclick on "Delete Customer"
+
+--> enter some "Customer ID" for e.g 123478
+
+--> click on "Submit" button
+
+Validate the alert contains below text ?
+Do you really want to delete this Customer?
+
+--> click on "Ok" in alert 
+
+
+--> Validate the alert contains below text ?
+
+Customer does not exist!!
+
+--> click on "Ok" in alert 
+
+????????????????????????????????????????????????????????????????
+
+JavaScript Executor :
+
+
+
+notification-frame
+
+//iframe[contains(@title,'notification-frame')]
+
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (759, 7527)
+ 
+ 
+ Reason 1 : Element is present but not clicked because of another element coming on it
+	        or it might be present in the bottom 
+ 
+ Solution 1: scroll to bottom of page using JavaScript and then click it 
+ 
+ Solution 2 : use JavaScript click method 
+ 
+ 
+ executeScript(String, Object...):Object
+ 
+ here String the javascript statement 
+ 
+ window.scrollBy(0, 1000);
+ 
+ Object... this represent an array of Objects 
