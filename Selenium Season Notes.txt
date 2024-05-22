@@ -879,3 +879,39 @@ element click intercepted: Element is not clickable at point (759, 7527)
  
  1) hard wait using Thread.sleep(3000);
  
+ 
+ 2) driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+ 
+ this is implied for all driver.findElement statements 
+ 
+ 3) Explicit Wait
+ 
+ Wait(I)
+ until(Function<? super F, T>);
+ 
+ WebDriverWait(C)
+ 
+	WebDriverWait(WebDriver, Duration) ==> this constructor will be used 
+	WebDriverWait(WebDriver, Duration, Duration)
+	WebDriverWait(WebDriver, Duration, Duration, Clock, Sleeper)
+	
+ ExpectedConditions(C) 
+ 
+ 4) FluentWait (C)
+ 
+ FluentWait(T) --> this constructor will be used 
+	FluentWait(T, Clock, Sleeper)
+ 
+ this advanced of WebDriverWait 
+ 
+ what improvements can be done for WebDriverWait ?
+ 
+ -> in previous of Selenium 
+  WebDriverWait(WebDriver, long)-> here long always repesents SECONDS
+  withTimeout(Duration)
+ -> polling wait is always 500 ms 
+ pollingEvery(Duration)
+ -> no internal Exception handling mechanism 
+ ignoreAll(Collection<Class<? extends K>>)
+ ignoring(Class<? extends Throwable>)
+ 
