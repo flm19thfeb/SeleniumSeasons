@@ -915,3 +915,38 @@ element click intercepted: Element is not clickable at point (759, 7527)
  ignoreAll(Collection<Class<? extends K>>)
  ignoring(Class<? extends Throwable>)
  
+ 
+ WebTables :
+ 
+ <table
+      <thead
+	  <tbody
+	       <tr
+		      <td 
+			  <td
+		   <tr
+		      <td
+			  <td 
+			  
+							WebTables
+							
+							
+			Static							Dynamic 
+
+
+//table/tbody/tr[1]/td[1]/a	 //table/tbody/tr[1]/td[2] ...//table/tbody/tr[1]/td[8]
+
+//table/tbody/tr[2]/td[1]/a	
+:
+:
+	
+
+//table/tbody/tr[36]/td[1]/a
+
+String part1="//table/tbody/tr[";
+String part2="]/td[1]/a";
+
+
+String part1="//table/tbody/tr[";
+String part2="]/td[";
+String part3="]";
